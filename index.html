@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yarn Dreams by Aruna - Crochet Christmas Gifts</title>
+    <!-- Open Graph / Social preview tags for sharing on WhatsApp/Social Media -->
+    <meta property="og:title" content="Yarn Dreams by Aruna" />
+    <meta property="og:description" content="Handcrafted crochet gifts and decor — view the gallery and order via WhatsApp." />
+    <meta property="og:image" content="https://i.imgur.com/I8MaWGA.jpg" />
+    <meta property="og:url" content="https://aruljothi.github.io/yarndreams/" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://aruljothi.github.io/yarndreams/" />
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for a festive look */
+        .ribbon-bg {
+            background-color: #A32039; /* Deep Red */
+            background-image: linear-gradient(135deg, #A32039 0%, #15803d 100%); /* Red to Green gradient */
+        }
+        .text-yarn {
+            color: #A32039; /* Deep Red */
+        }
+        .border-yarn {
+            border-color: #15803d; /* Forest Green */
+        }
+        .shadow-yarn {
+            box-shadow: 0 10px 15px -3px rgba(163, 32, 57, 0.5), 0 4px 6px -2px rgba(163, 32, 57, 0.2);
+        }
+        .card-bg {
+            background-color: #fefcfb; /* Off-white for texture */
+        }
+        .section-divider {
+            height: 4px;
+            background-color: #15803d;
+            background-image: repeating-linear-gradient(45deg, #15803d, #15803d 10px, #A32039 10px, #A32039 20px);
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 9999px;
+        }
+        /* Ensure responsive image scaling within the grid */
+        .product-image {
+            width: 100%;
+            height: 300px; /* Increased height for better visibility */
+            object-fit: cover;
+            object-position: center;
+            background-color: #e5e7eb;
+        }
+        /* Lightbox overlay styles */
+        .cd-overlay {
+            position: fixed;
+            inset: 0;
+            display: none;
+            background: rgba(0,0,0,0.85);
+            justify-content: center;
+            align-items: center;
+            z-index: 60;
+            padding: 1rem;
+        }
+        .cd-overlay.open { display: flex; }
+        .cd-overlay img { max-width: 95%; max-height: 90%; border-radius: 6px; box-shadow: 0 10px 30px rgba(0,0,0,0.6); }
+        .cd-overlay .close-btn { position: absolute; top: 16px; right: 16px; background: transparent; border: none; color: #fff; font-size: 28px; cursor: pointer; }
+
+        /* Ensure link is clickable over the image container */
+        .portfolio-item {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .portfolio-item > a {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .portfolio-item .product-image {
+            flex-shrink: 0;
+        }
+        .portfolio-item .p-4 {
+            flex-grow: 1;
+        }
+        /* Style for the category divider within the portfolio section */
+        .category-header {
+            grid-column: 1 / -1;
+            text-align: center;
+            padding-top: 1.5rem;
+            padding-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Header & Introduction -->
+    <header class="ribbon-bg p-8 md:p-12 text-white shadow-lg">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-2">
+                Yarn Dreams by Aruna
+            </h1>
+            <p class="text-xl md:text-2xl font-light italic mt-4 mb-4">
+                Handcrafted Crochet Gifts, Made with Love
+            </p>
+            <p class="text-lg font-medium bg-white/20 p-3 rounded-xl inline-block">
+                Custom Christmas Gifts & Decor for Our Estate!
+            </p>
+            
+            <!-- Removed the share-btn div completely as requested -->
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-4 py-8 md:py-12">
+
+        <!-- Christmas Collection Section - Featured 8 Items -->
+        <section id="christmas-gifts" class="mb-12">
+            <h2 class="text-4xl font-bold text-center text-yarn mb-4">Our Featured Christmas Collection 🎄</h2>
+            <p class="text-center text-gray-600 mb-8">
+                Get your home ready for the holidays with these unique, handmade crochet pieces. Click any image to see a larger preview!
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                
+                <!-- Product 1: Classic Crochet Bell Set (I8MaWGA) -->
+                <div class="bg-white card-bg rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden portfolio-item">
+                    <a href="https://imgur.com/I8MaWGA" class="imgur-lightbox" data-full="https://i.imgur.com/I8MaWGA.jpg">
+                        <img src="https://i.imgur.com/I8MaWGAm.jpg" srcset="https://i.imgur.com/I8MaWGAm.jpg 320w, https://i.imgur.com/I8MaWGA.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Set of red, white, and green crochet bells with ribbons and pearls" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/15803d/ffffff?text=3+BELLS';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-xl text-gray-800">Classic Crochet Bell Set</h3>
+                            <p class="text-sm text-gray-500">Traditional colors with delicate pearl details.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Product 2: Red Crochet Bell (29AaKy3) -->
+                <div class="bg-white card-bg rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden portfolio-item">
+                    <a href="https://imgur.com/29AaKy3" class="imgur-lightbox" data-full="https://i.imgur.com/29AaKy3.jpg">
+                        <img src="https://i.imgur.com/29AaKy3m.jpg" srcset="https://i.imgur.com/29AaKy3m.jpg 320w, https://i.imgur.com/29AaKy3.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Crochet red bell with pearl trim" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/15803d/ffffff?text=RED+BELL';" loading="lazy">                                                                
+                        <div class="p-4">
+                            <h3 class="font-semibold text-xl text-gray-800">Beaded Christmas Bell</h3>
+                            <p class="text-sm text-gray-500">A charming, textured ornament.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Product 3: Snowflake Ornament (f2xotgM) -->
+                <div class="bg-white card-bg rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden portfolio-item">
+                    <a href="https://imgur.com/f2xotgM" class="imgur-lightbox" data-full="https://i.imgur.com/f2xotgM.jpg">
+                        <img src="https://i.imgur.com/f2xotgMm.jpg" srcset="https://i.imgur.com/f2xotgMm.jpg 320w, https://i.imgur.com/f2xotgM.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="White and red crochet snowflake ornament" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/A32039/ffffff?text=SNOWFLAKE';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-xl text-gray-800">Two-Tone Snowflake</h3>
+                            <p class="text-sm text-gray-500">Elegant design for tree or window display.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- Product 4: Mini Christmas Tree Set (nyjBgm6) -->
+                <div class="bg-white card-bg rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden portfolio-item">
+                    <a href="https://imgur.com/nyjBgm6" class="imgur-lightbox" data-full="https://i.imgur.com/nyjBgm6.jpg">
+                        <img src="https://i.imgur.com/nyjBgm6m.jpg" srcset="https://i.imgur.com/nyjBgm6m.jpg 320w, https://i.imgur.com/nyjBgm6.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Red, green, and white crochet Christmas trees with gold beads" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/A32039/ffffff?text=XMAS+TREES';" loading="lazy">                      
+                        <div class="p-4">
+                            <h3 class="font-semibold text-xl text-gray-800">Mini Christmas Tree Set</h3>
+                            <p class="text-sm text-gray-500">Beaded accents for a touch of elegance.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Product 5: Santa Gift Pouch Applique (JBrxtEZ) -->
+                <div class="bg-white card-bg rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden portfolio-item">
+                    <a href="https://imgur.com/JBrxtEZ" class="imgur-lightbox" data-full="https://i.imgur.com/JBrxtEZ.jpg">
+                        <img src="https://i.imgur.com/JBrxtEZm.jpg" srcset="https://i.imgur.com/JBrxtEZm.jpg 320w, https://i.imgur.com/JBrxtEZ.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Crochet Santa hat and face applique on a canvas pouch" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/15803d/ffffff?text=SANTA+POUCH';" loading="lazy">                                 
+                        <div class="p-4">
+                            <h3 class="font-semibold text-xl text-gray-800">Santa Gift Pouch Applique</h3>
+                            <p class="text-sm text-gray-500">Perfect for gifts or advent calendar fillers.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Product 6: Festive Spiral Garland (pVC6zCs) -->
+                <div class="bg-white card-bg rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden portfolio-item">
+                    <a href="https://imgur.com/pVC6zCs" class="imgur-lightbox" data-full="https://i.imgur.com/pVC6zCs.jpg">
+                        <img src="https://i.imgur.com/pVC6zCsm.jpg" srcset="https://i.imgur.com/pVC6zCsm.jpg 320w, https://i.imgur.com/pVC6zCs.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Red, green, and white spiral crochet garland" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/15803d/ffffff?text=SPIRAL+GARLAND';" loading="lazy">                                        
+                        <div class="p-4">
+                            <h3 class="font-semibold text-xl text-gray-800">Festive Spiral Garland</h3>
+                            <p class="text-sm text-gray-500">Fun, flexible garland for the tree or mantel.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Product 7: Santa Wind Spinner (KnccC6B) -->
+                <div class="bg-white card-bg rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden portfolio-item">
+                    <a href="https://imgur.com/KnccC6B" class="imgur-lightbox" data-full="https://i.imgur.com/KnccC6B.jpg">
+                        <img src="https://i.imgur.com/KnccC6Bm.jpg" srcset="https://i.imgur.com/KnccC6Bm.jpg 320w, https://i.imgur.com/KnccC6B.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Santa wind spinner ornament" class="product-image rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ef4444/ffffff?text=SPINNER';" loading="lazy">                                                          
+                        <div class="p-4">
+                            <h3 class="font-semibold text-xl text-gray-800">Santa Wind Spinner</h3>
+                            <p class="text-sm text-gray-500">A playful ornament that spins in the wind.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Product 8: Christmas Ornaments Set (pQAnASS) -->
+                <div class="bg-white card-bg rounded-xl shadow-lg hover:shadow-xl transition-shadow overflow-hidden portfolio-item">
+                    <a href="https://imgur.com/pQAnASS" class="imgur-lightbox" data-full="https://i.imgur.com/pQAnASS.jpg">
+                        <img src="https://i.imgur.com/pQAnASSm.jpg" srcset="https://i.imgur.com/pQAnASSm.jpg 320w, https://i.imgur.com/pQAnASS.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Assortment of crochet Christmas ornaments" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/A32039/ffffff?text=XMAS+ORNAMENTS';" loading="lazy">                                            
+                        <div class="p-4">
+                            <h3 class="font-semibold text-xl text-gray-800">The Grand Ornament Collection</h3>
+                            <p class="text-sm text-gray-500">Bells, Santa faces, Snowflakes, and more!</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider"></div>
+        
+        <!-- Custom Work Portfolio Section (Consolidated and Categorized) -->
+        <section id="custom-work" class="mb-12">
+            <h2 class="text-4xl font-bold text-center text-yarn mb-4">Custom Work Portfolio (31 Items)</h2>
+            <p class="text-center text-gray-700 mb-8 max-w-3xl mx-auto">
+                I specialize in custom crochet pieces tailored exactly to your needs—from blankets and baby clothes to unique decor and accessories. Any of these can be customized for a Christmas theme!
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 p-4 bg-white rounded-xl shadow-xl">
+                
+                <h3 class="category-header text-2xl font-semibold text-gray-800 border-b pb-2 mb-4">Home Decor & Table Accents (13 Items)</h3>
+                
+                <!-- Home Decor Items (13 total) -->
+                
+                <!-- 1. Vibrant Mandala Doily (1etRPek) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/1etRPek" class="imgur-lightbox" data-full="https://i.imgur.com/1etRPek.jpg">
+                        <img src="https://i.imgur.com/1etRPekm.jpg" srcset="https://i.imgur.com/1etRPekm.jpg 320w, https://i.imgur.com/1etRPek.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Circular multicolored crochet mandala" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/f05e94/ffffff?text=MANDALA+DOILY';" loading="lazy">                                
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Vibrant Mandala Doily</h3>
+                            <p class="text-sm text-gray-500">Intricate designs for table centerpiece.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- 2. Elegant Square Doily (qMg0wI4) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/qMg0wI4" class="imgur-lightbox" data-full="https://i.imgur.com/qMg0wI4.jpg">
+                        <img src="https://i.imgur.com/qMg0wI4m.jpg" srcset="https://i.imgur.com/qMg0wI4m.jpg 320w, https://i.imgur.com/qMg0wI4.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Square maroon and white crochet doily" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/5e001c/ffffff?text=SQUARE+DOILY';" loading="lazy">                                
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Elegant Square Doily</h3>
+                            <p class="text-sm text-gray-500">Maroon and white custom home decor.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- 3. Colorful Table Runner (uGQuzM9) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/uGQuzM9" class="imgur-lightbox" data-full="https://i.imgur.com/uGQuzM9.jpg">
+                        <img src="https://i.imgur.com/uGQuzM9m.jpg" srcset="https://i.imgur.com/uGQuzM9m.jpg 320w, https://i.imgur.com/uGQuzM9.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Blue and yellow crochet table runner" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/515255/ffffff?text=TABLE+RUNNER';" loading="lazy">                                    
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Colorful Table Runner</h3>
+                            <p class="text-sm text-gray-500">Long table accents, custom dimensions.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- 4. White Square Doily (VqfMpbk) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/VqfMpbk" class="imgur-lightbox" data-full="https://i.imgur.com/VqfMpbk.jpg">
+                        <img src="https://i.imgur.com/VqfMpbkm.jpg" srcset="https://i.imgur.com/VqfMpbkm.jpg 320w, https://i.imgur.com/VqfMpbk.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="White square motif doily" class="product-image rounded-t-xl border border-gray-200 shadow-sm" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ffffff/000000?text=WHITE+SQUARE';" loading="lazy">                               
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">White Square Doily</h3>
+                            <p class="text-sm text-gray-500">Classic design for clean decor.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 5. Blue Mandala Doily (5Dnt8bD) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/5Dnt8bD" class="imgur-lightbox" data-full="https://i.imgur.com/5Dnt8bD.jpg">
+                        <img src="https://i.imgur.com/5Dnt8bDm.jpg" srcset="https://i.imgur.com/5Dnt8bDm.jpg 320w, https://i.imgur.com/5Dnt8bD.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Blue mandala doily" class="product-image rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/400x300/60a5fa/ffffff?text=BLUE+MANDALA';" loading="lazy">                                                                 
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Blue Mandala Doily</h3>
+                            <p class="text-sm text-gray-500">A bright centerpiece for any table.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- 6. Hex Motif (1XlBdrR) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/1XlBdrR" class="imgur-lightbox" data-full="https://i.imgur.com/1XlBdrR.jpg">
+                        <img src="https://i.imgur.com/1XlBdrRm.jpg" srcset="https://i.imgur.com/1XlBdrRm.jpg 320w, https://i.imgur.com/1XlBdrR.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Hex-shape crochet motif" class="product-image rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/400x300/7c3aed/ffffff?text=HEX+MOTIF';" loading="lazy">                                                                       
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Hex Crochet Motif</h3>
+                            <p class="text-sm text-gray-500">Modular design, great for coasters or garlands.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 7. Oval Placemat (m9WylxY) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/m9WylxY" class="imgur-lightbox" data-full="https://i.imgur.com/m9WylxY.jpg">
+                        <img src="https://i.imgur.com/m9WylxYm.jpg" srcset="https://i.imgur.com/m9WylxYm.jpg 320w, https://i.imgur.com/m9WylxY.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Oval placemat" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/fef3c7/000000?text=Oval+Placemat';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Oval Crochet Placemat</h3>
+                            <p class="text-sm text-gray-500">Elegant dining room accessory.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 8. Coaster (7tPi3vo) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/7tPi3vo" class="imgur-lightbox" data-full="https://i.imgur.com/7tPi3vo.jpg">
+                        <img src="https://i.imgur.com/7tPi3vom.jpg" srcset="https://i.imgur.com/7tPi3vom.jpg 320w, https://i.imgur.com/7tPi3vo.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Coaster" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/ffd6e0/000000?text=Coaster';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Floral Coaster</h3>
+                            <p class="text-sm text-gray-500">Small item, perfect for housewarming.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 9. Runner (7J1b6md) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/7J1b6md" class="imgur-lightbox" data-full="https://i.imgur.com/7J1b6md.jpg">
+                        <img src="https://i.imgur.com/7J1b6mdm.jpg" srcset="https://i.imgur.com/7J1b6mdm.jpg 320w, https://i.imgur.com/7J1b6md.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Runner" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/93c5fd/000000?text=Runner';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Blue Table Runner</h3>
+                            <p class="text-sm text-gray-500">Long decorative table accent.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 10. Simple White Doily (aaee1b47) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/i9TzT0j" class="imgur-lightbox" data-full="https://i.imgur.com/i9TzT0j.jpg">
+                        <img src="https://i.imgur.com/i9TzT0jm.jpg" srcset="https://i.imgur.com/i9TzT0jm.jpg 320w, https://i.imgur.com/i9TzT0j.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Simple white square doily" class="product-image rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ffffff/000000?text=WHITE+DOILY+1';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Classic White Square Doily</h3>
+                            <p class="text-sm text-gray-500">Perfect for under vases or lamps.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 11. Red Round Doily (fbfd252a) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/x0QvKxG" class="imgur-lightbox" data-full="https://i.imgur.com/x0QvKxG.jpg">
+                        <img src="https://i.imgur.com/x0QvKxGm.jpg" srcset="https://i.imgur.com/x0QvKxGm.jpg 320w, https://i.imgur.com/x0QvKxG.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Red round crochet doily" class="product-image rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ff0000/ffffff?text=RED+DOILY';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Crimson Round Doily</h3>
+                            <p class="text-sm text-gray-500">Can be a festive runner or centerpiece.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 12. Pink Round Doily (ca03cc76) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/eKj9T3n" class="imgur-lightbox" data-full="https://i.imgur.com/eKj9T3n.jpg">
+                        <img src="https://i.imgur.com/eKj9T3nm.jpg" srcset="https://i.imgur.com/eKj9T3nm.jpg 320w, https://i.imgur.com/eKj9T3n.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Pink and multicolored round doily" class="product-image rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ff69b4/ffffff?text=PINK+MANDALA';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Pastel Layered Mandala</h3>
+                            <p class="text-sm text-gray-500">Multi-toned piece for living areas.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 13. Blue/White Round Doily (a86a6226) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/L1d4g0E" class="imgur-lightbox" data-full="https://i.imgur.com/L1d4g0E.jpg">
+                        <img src="https://i.imgur.com/L1d4g0Em.jpg" srcset="https://i.imgur.com/L1d4g0Em.jpg 320w, https://i.imgur.com/L1d4g0E.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Blue and white round crochet motif" class="product-image rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/400x300/60a5fa/ffffff?text=BLUE+DOILY';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Aqua Floral Motif</h3>
+                            <p class="text-sm text-gray-500">Clean, crisp summer decor.</p>
+                        </div>
+                    </a>
+                </div>
+
+
+                <h3 class="category-header text-2xl font-semibold text-gray-800 border-b pb-2 mt-6 mb-4">Personal Accessories & Gifts (11 Items)</h3>
+
+                <!-- Accessories Items (11 total) -->
+
+                <!-- 14. Unique Shell Handbag (D3bNnT8) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/D3bNnT8" class="imgur-lightbox" data-full="https://i.imgur.com/D3bNnT8.jpg">
+                        <img src="https://i.imgur.com/D3bNnT8m.jpg" srcset="https://i.imgur.com/D3bNnT8m.jpg 320w, https://i.imgur.com/D3bNnT8.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Peach colored crochet shell-shaped bag" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/e9967a/ffffff?text=SHELL+HANDBAG';" loading="lazy">                                         
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Unique Shell Handbag</h3>
+                            <p class="text-sm text-gray-500">Shoulder bags and purses made to order.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- 15. Cozy Winter Scarf (eC9PABT) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/eC9PABT" class="imgur-lightbox" data-full="https://i.imgur.com/eC9PABT.jpg">
+                        <img src="https://i.imgur.com/eC9PABTm.jpg" srcset="https://i.imgur.com/eC9PABTm.jpg 320w, https://i.imgur.com/eC9PABT.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Brown textured crochet scarf" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/8b4513/ffffff?text=WINTER+SCARF';" loading="lazy">                                           
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Cozy Winter Scarf</h3>
+                            <p class="text-sm text-gray-500">Warm and stylish, perfect for gifting.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 16. Small Accessories Pouch (OArDO9h) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/OArDO9h" class="imgur-lightbox" data-full="https://i.imgur.com/OArDO9h.jpg">
+                        <img src="https://i.imgur.com/OArDO9hm.jpg" srcset="https://i.imgur.com/OArDO9hm.jpg 320w, https://i.imgur.com/OArDO9h.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Pink crochet pouch with blue flower applique" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/ff69b4/ffffff?text=SMALL+POUCH';" loading="lazy">                                     
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Small Accessories Pouch</h3>
+                            <p class="text-sm text-gray-500">For coins, makeup, or jewelry.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 17. Pastel Headband Set (Ef6aVmQ) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/Ef6aVmQ" class="imgur-lightbox" data-full="https://i.imgur.com/Ef6aVmQ.jpg">
+                        <img src="https://i.imgur.com/Ef6aVmQm.jpg" srcset="https://i.imgur.com/Ef6aVmQm.jpg 320w, https://i.imgur.com/Ef6aVmQ.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Crochet headbands in various pastel colors" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/f59e0b/ffffff?text=HEADBANDS';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Pastel Headband Set</h3>
+                            <p class="text-sm text-gray-500">Custom colors and flower details.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 18. Festive Purse (weGaGyz) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/weGaGyz" class="imgur-lightbox" data-full="https://i.imgur.com/weGaGyz.jpg">
+                        <img src="https://i.imgur.com/weGaGyzm.jpg" srcset="https://i.imgur.com/weGaGyzm.jpg 320w, https://i.imgur.com/weGaGyz.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Red & green crochet purse" class="product-image rounded-t-xl" onerror="this.onerror=null;this.src='https://placehold.co/400x300/ff0000/ffffff?text=PURSE';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Festive Purse</h3>
+                            <p class="text-sm text-gray-500">Great size for phone and keys.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 19. Earbud Pouch (1iS2y5r) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/1iS2y5r" class="imgur-lightbox" data-full="https://i.imgur.com/1iS2y5r.jpg">
+                        <img src="https://i.imgur.com/1iS2y5rm.jpg" srcset="https://i.imgur.com/1iS2y5rm.jpg 320w, https://i.imgur.com/1iS2y5r.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Earpod / Airpod Pouch - crochet" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/9ca3af/ffffff?text=Earbud+Pouch';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Earbud Pouch</h3>
+                            <p class="text-sm text-gray-500">Keeps small tech safe and stylish.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 20. Dark Scarf (JQJcmir) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/JQJcmir" class="imgur-lightbox" data-full="https://i.imgur.com/JQJcmir.jpg">
+                        <img src="https://i.imgur.com/JQJcmirm.jpg" srcset="https://i.imgur.com/JQJcmirm.jpg 320w, https://i.imgur.com/JQJcmir.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Dark colored scarf" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/4b5563/ffffff?text=Dark+Scarf';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Dark Colored Scarf</h3>
+                            <p class="text-sm text-gray-500">Woven texture, neutral tone.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 21. Light Scarf (zbaZsov) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/zbaZsov" class="imgur-lightbox" data-full="https://i.imgur.com/zbaZsov.jpg">
+                        <img src="https://i.imgur.com/zbaZsovm.jpg" srcset="https://i.imgur.com/zbaZsovm.jpg 320w, https://i.imgur.com/zbaZsov.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Light colored scarf" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/e9d5ff/ffffff?text=Light+Scarf';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Light Colored Scarf</h3>
+                            <p class="text-sm text-gray-500">Soft, easy to layer accessory.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 22. White Pouch (6Flotka) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/6Flotka" class="imgur-lightbox" data-full="https://i.imgur.com/6Flotka.jpg">
+                        <img src="https://i.imgur.com/6Flotkam.jpg" srcset="https://i.imgur.com/6Flotkam.jpg 320w, https://i.imgur.com/6Flotka.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="White crochet pouch" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/ffffff/000000?text=White+Pouch';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">White Crochet Pouch</h3>
+                            <p class="text-sm text-gray-500">Clean, crisp small storage.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 23. Blue Pouch (MxU5cTr) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/MxU5cTr" class="imgur-lightbox" data-full="https://i.imgur.com/MxU5cTr.jpg">
+                        <img src="https://i.imgur.com/MxU5cTrm.jpg" srcset="https://i.imgur.com/MxU5cTrm.jpg 320w, https://i.imgur.com/MxU5cTr.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Blue crochet pouch" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/60a5fa/ffffff?text=Blue+Pouch';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Blue Crochet Pouch</h3>
+                            <p class="text-sm text-gray-500">Vibrant color for holding accessories.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <h3 class="category-header text-2xl font-semibold text-gray-800 border-b pb-2 mt-6 mb-4">Baby & Children's Items (7 Items)</h3>
+
+                <!-- Baby Items (7 total) -->
+
+                <!-- 24. Navy & Yellow Baby Dress (sMt9Caw) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/sMt9Caw" class="imgur-lightbox" data-full="https://i.imgur.com/sMt9Caw.jpg">
+                        <img src="https://i.imgur.com/sMt9Cawm.jpg" srcset="https://i.imgur.com/sMt9Cawm.jpg 320w, https://i.imgur.com/sMt9Caw.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Crochet baby dress in navy blue and yellow" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/9333ea/ffffff?text=BABY+DRESS';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Navy & Yellow Baby Dress</h3>
+                            <p class="text-sm text-gray-500">Custom baby wear, soft and adorable.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- 25. Colorful Baby Blanket (FmVFbZJ) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/FmVFbZJ" class="imgur-lightbox" data-full="https://i.imgur.com/FmVFbZJ.jpg">
+                        <img src="https://i.imgur.com/FmVFbZJm.jpg" srcset="https://i.imgur.com/FmVFbZJm.jpg 320w, https://i.imgur.com/FmVFbZJ.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Colorful baby blanket" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/fca5a5/ffffff?text=Baby+Blanket';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Colorful Baby Blanket</h3>
+                            <p class="text-sm text-gray-500">Perfect nursery gift or custom size.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- 26. Grey & White Baby Dress (kW0McdQ) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/kW0McdQ" class="imgur-lightbox" data-full="https://i.imgur.com/kW0McdQ.jpg">
+                        <img src="https://i.imgur.com/kW0McdQm.jpg" srcset="https://i.imgur.com/kW0McdQm.jpg 320w, https://i.imgur.com/kW0McdQ.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Grey and white baby dress" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/9ca3af/ffffff?text=Baby+Dress';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Grey & White Baby Dress</h3>
+                            <p class="text-sm text-gray-500">Elegant and comfortable design.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- 27. Pink Ruffled Baby Dress (JJuAoGB) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/JJuAoGB" class="imgur-lightbox" data-full="https://i.imgur.com/JJuAoGB.jpg">
+                        <img src="https://i.imgur.com/JJuAoGBm.jpg" srcset="https://i.imgur.com/JJuAoGBm.jpg 320w, https://i.imgur.com/JJuAoGB.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Pink baby dress" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/ff69b4/ffffff?text=Pink+Dress';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Pink Ruffled Baby Dress</h3>
+                            <p class="text-sm text-gray-500">Delicate work with a feminine touch.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <!-- 28. Colorful Baby Dress (jRNfEMg) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/jRNfEMg" class="imgur-lightbox" data-full="https://i.imgur.com/jRNfEMg.jpg">
+                        <img src="https://i.imgur.com/jRNfEMgm.jpg" srcset="https://i.imgur.com/jRNfEMgm.jpg 320w, https://i.imgur.com/jRNfEMg.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Colorful baby dress" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/f59e0b/ffffff?text=Baby+Dress';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Pastel Striped Baby Dress</h3>
+                            <p class="text-sm text-gray-500">Bright and cheerful multi-color design.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 29. White Baby Dress (ZtsMaV3) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/ZtsMaV3" class="imgur-lightbox" data-full="https://i.imgur.com/ZtsMaV3.jpg">
+                        <img src="https://i.imgur.com/ZtsMaV3m.jpg" srcset="https://i.imgur.com/ZtsMaV3m.jpg 320w, https://i.imgur.com/ZtsMaV3.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="White baby dress" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/ffffff/000000?text=White+Dress';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Classic White Baby Dress</h3>
+                            <p class="text-sm text-gray-500">Elegant traditional style.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- 30. Baby Blanket (ZFQd9pY) -->
+                <div class="bg-white card-bg rounded-xl shadow-md overflow-hidden text-center portfolio-item">
+                    <a href="https://imgur.com/ZFQd9pY" class="imgur-lightbox" data-full="https://i.imgur.com/ZFQd9pY.jpg">
+                        <img src="https://i.imgur.com/ZFQd9pYm.jpg" srcset="https://i.imgur.com/ZFQd9pYm.jpg 320w, https://i.imgur.com/ZFQd9pY.jpg 1024w" sizes="(max-width: 768px) 100vw, 33vw" alt="Baby blanket" class="product-image rounded-t-xl" onerror="this.onerror=null; this.src='https://placehold.co/400x300/fce7f3/000000?text=Baby+Blanket';" loading="lazy">
+                        <div class="p-4">
+                            <h3 class="font-semibold text-lg">Light Pink Baby Blanket</h3>
+                            <p class="text-sm text-gray-500">Soft and warm for a crib or stroller.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <div class="section-divider"></div>
+
+        <!-- Contact & Ordering Section -->
+        <section id="contact" class="text-center pt-4">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Ready to Order?</h2>
+
+            <div class="max-w-xl mx-auto p-6 bg-white card-bg rounded-xl shadow-yarn">
+                <p class="text-lg text-gray-700 mb-4">
+                    Send me a quick message on WhatsApp to discuss your order or custom request!
+                </p>
+
+                <!-- Key Call to Action for WhatsApp -->
+                <div class="space-y-4">
+                    <a href="https://wa.me/353892004638?text=Hello%20Aruna%2C%20I%27m%20interested%20in%20a%20crochet%20Christmas%20gift%20or%20a%20custom%20order!" target="_blank" class="block w-full py-3 px-6 bg-green-500 hover:bg-green-600 text-white text-xl font-bold rounded-full transition duration-300 transform hover:scale-105 shadow-md">
+                        Message Me on WhatsApp
+                    </a>
+                    
+                    <p class="mt-3 text-sm text-gray-700">WhatsApp: <a href="https://wa.me/353892004638" class="text-green-600 font-semibold">+353 89 200 4638</a></p>
+                </div>
+                
+                <div class="mt-6 border-t pt-4">
+                    <p class="text-sm text-gray-500 mb-2">
+                        You can also see more of my work here:
+                    </p>
+                    <a href="https://www.instagram.com/yarndreamsbyaruna/" target="_blank" class="text-pink-500 hover:text-pink-600 font-medium transition-colors flex justify-center items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                            <path d="M16 3h1.5a2.5 2.5 0 0 1 2.5 2.5V8"></path>
+                            <path d="M19 16v1.5a2.5 2.5 0 0 1-2.5 2.5H16"></path>
+                            <path d="M8 19H6.5A2.5 2.5 0 0 1 4 16.5V16"></path>
+                            <path d="M5 8V6.5A2.5 2.5 0 0 1 7.5 4H8"></path>
+                            <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                        </svg>
+                        @yarndreamsbyaruna (Instagram)
+                    </a>
+                </div>
+            </div>
+            
+            <p class="text-xs text-gray-400 mt-8">
+                Thankoloogies from Aruna!
+            </p>
+        </section>
+
+    </main>
+    
+    <script>
+        // Lightbox script for Imgur direct images (anchors with class 'imgur-lightbox')
+        (function(){
+            function createOverlay(){
+                var overlay = document.createElement('div');
+                overlay.className = 'cd-overlay';
+                overlay.innerHTML = '<button class="close-btn" aria-label="close">\u00D7</button><img src="" alt="Preview">';
+                document.body.appendChild(overlay);
+                return overlay;
+            }
+            var overlay = document.querySelector('.cd-overlay') || createOverlay();
+            var overlayImg = overlay.querySelector('img');
+            var closeBtn = overlay.querySelector('.close-btn');
+
+            function openLightbox(url){
+                overlayImg.src = url;
+                overlay.classList.add('open');
+                document.body.style.overflow = 'hidden';
+            }
+            function closeLightbox(){
+                overlay.classList.remove('open');
+                overlayImg.src = '';
+                document.body.style.overflow = '';
+            }
+            closeBtn.addEventListener('click', closeLightbox);
+            overlay.addEventListener('click', function(e){ 
+                // Close if clicking the overlay itself (but not the image or the close button, which is handled above)
+                if (e.target === overlay) closeLightbox(); 
+            });
+            document.addEventListener('keydown', function(e){ if(e.key === 'Escape') closeLightbox(); });
+
+            // Attach handlers to anchors with 'imgur-lightbox' class
+            var anchors = document.querySelectorAll('a.imgur-lightbox');
+            anchors.forEach(function(a){
+                // Ensure anchor is only handled once
+                if(a.dataset.hasListener) return;
+
+                // The full resolution image URL is stored in data-full attribute
+                var imgUrl = a.dataset.full; 
+
+                // Only add click listener if we have a full image URL
+                if(imgUrl){
+                    a.addEventListener('click', function(e){ 
+                        e.preventDefault(); 
+                        openLightbox(imgUrl); 
+                    });
+                    a.dataset.hasListener = 'true'; // Mark as handled
+                } else {
+                    // If no data-full, let it act as a normal link (e.g., to Imgur page)
+                }
+            });
+        })();
+    </script>
+</body>
+</html>
